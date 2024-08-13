@@ -6,6 +6,7 @@
 
 # Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
+$(call inherit-product-if-exists, vendor/godlib/god.mk)
 $(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
 
 # Inherit device configuration
